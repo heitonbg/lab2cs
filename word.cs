@@ -1,6 +1,6 @@
 ﻿﻿using System;
 
-namespace lab2 {
+namespace lab2cs {
   class Word : Document {
     string DocumentWordPageCount, DocumentWordUsedFonts;
 
