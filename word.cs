@@ -4,13 +4,13 @@ namespace lab2cs {
   class Word : Document {
     string DocumentWordPageCount, DocumentWordUsedFonts;
 
-    public Word(string DocumentTitle, string DocumentAuthor, string DocumentKeyWord, string DocumentPath,
-      string DocumentTopic) {
-      this.DocumentTitle = DocumentTitle;
-      this.DocumentAuthor = DocumentAuthor;
-      this.DocumentKeyWord = DocumentKeyWord;
-      this.DocumentPath = DocumentPath;
-      this.DocumentTopic = DocumentTopic;
+    public Word(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath,
+      string documentTopic) {
+      this.DocumentTitle = documentTitle;
+      this.DocumentAuthor = documentAuthor;
+      this.DocumentKeyWord = documentKeyWord;
+      this.DocumentPath = documentPath;
+      this.DocumentTopic = documentTopic;
 
       Console.WriteLine("Введите количество страниц: ");
       DocumentWordPageCount = Console.ReadLine();

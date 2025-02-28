@@ -12,11 +12,11 @@ namespace lab2cs {
     }
 
     enum Types {
-      TXT = 1,
+      Txt = 1,
       Word,
       Excel,
-      HTML,
-      PDF,
+      Html,
+      Pdf,
     }
 
     string DocumentTitle, DocumentAuthor,
@@ -24,7 +24,7 @@ namespace lab2cs {
 
     public void DataInput() {
       Console.WriteLine("Выберите формат файла:\n1. TXT\n2. Word\n3. Excel\n4. HTML\n5. PDF");
-      int UserChoice = int.Parse(Console.ReadLine());
+      int userChoice = int.Parse(Console.ReadLine());
 
       Console.WriteLine("Введите Имя файла: ");
       DocumentTitle = Console.ReadLine();
@@ -41,10 +41,10 @@ namespace lab2cs {
       Console.WriteLine("Введите основную тему файла: ");
       DocumentTopic = Console.ReadLine();
 
-      switch (UserChoice) {
-        case (int)Types.TXT:
-          TXT DocumentTXT = new TXT(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
-          DocumentTXT.DocumentInfo();
+      switch (userChoice) {
+        case (int)Types.Txt:
+          Txt DocumentTxt = new Txt(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
+          DocumentTxt.DocumentInfo();
           break;
         case (int)Types.Word:
           Word DocumentWord = new Word(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
@@ -54,13 +54,13 @@ namespace lab2cs {
           Excel DocumentExcel = new Excel(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
           DocumentExcel.DocumentInfo();
           break;
-        case (int)Types.HTML:
-          HTML DocumentHTML = new HTML(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
-          DocumentHTML.DocumentInfo();
+        case (int)Types.Html:
+          Html DocumentHtml = new Html(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
+          DocumentHtml.DocumentInfo();
           break;
-        case (int)Types.PDF:
-          PDF DocumentPDF = new PDF(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
-          DocumentPDF.DocumentInfo();
+        case (int)Types.Pdf:
+          Pdf DocumentPdf = new Pdf(DocumentTitle, DocumentAuthor, DocumentKeyWord, DocumentPath, DocumentTopic);
+          DocumentPdf.DocumentInfo();
           break;
       }
 

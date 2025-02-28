@@ -1,28 +1,28 @@
 ﻿﻿using System;
 
 namespace lab2cs {
-  class HTML : Document {
-    string DocumentHTMLClassesUsed, DocumentHTMLStringCount;
+  class Html : Document {
+    string DocumentHtmlClassesUsed, DocumentHtmlStringCount;
 
-    public HTML(string DocumentTitle, string DocumentAuthor, string DocumentKeyWord, string DocumentPath,
-      string DocumentTopic) {
-      this.DocumentTitle = DocumentTitle;
-      this.DocumentAuthor = DocumentAuthor;
-      this.DocumentKeyWord = DocumentKeyWord;
-      this.DocumentPath = DocumentPath;
-      this.DocumentTopic = DocumentTopic;
+    public Html(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath,
+      string documentTopic) {
+      this.DocumentTitle = documentTitle;
+      this.DocumentAuthor = documentAuthor;
+      this.DocumentKeyWord = documentKeyWord;
+      this.DocumentPath = documentPath;
+      this.DocumentTopic = documentTopic;
 
       Console.WriteLine("Введите количество строк: ");
-      DocumentHTMLStringCount = Console.ReadLine();
+      DocumentHtmlStringCount = Console.ReadLine();
 
       Console.WriteLine("Введите используемые классы: ");
-      DocumentHTMLClassesUsed = Console.ReadLine();
+      DocumentHtmlClassesUsed = Console.ReadLine();
     }
 
     public override void DocumentInfo() {
       Console.WriteLine($"\nИмя: {DocumentTitle}\nАвтор: {DocumentAuthor}\nКлючевые слова: {DocumentKeyWord}\n" +
-        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nИспользуемые классы: {DocumentHTMLClassesUsed}\n" +
-        $"Количество строк: {DocumentHTMLStringCount}\n");
+        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nИспользуемые классы: {DocumentHtmlClassesUsed}\n" +
+        $"Количество строк: {DocumentHtmlStringCount}\n");
     }
   }
 }
