@@ -2,7 +2,7 @@
 
 namespace lab2cs {
   class Excel : Document {
-    string documentExcelRowCount, documentExcelColumnCount;
+    string DocumentExcelRowCount, DocumentExcelColumnCount;
 
     public Excel(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath,
       string documentTopic) {
@@ -13,16 +13,16 @@ namespace lab2cs {
       this.DocumentTopic = documentTopic;
 
       Console.WriteLine("Введите количество столбцов: ");
-      documentExcelColumnCount = Console.ReadLine();
+      DocumentExcelColumnCount = Console.ReadLine();
 
       Console.WriteLine("Введите количество строк: ");
-      documentExcelRowCount = Console.ReadLine();
+      DocumentExcelRowCount = Console.ReadLine();
     }
 
     public override void DocumentInfo() {
       Console.WriteLine($"\nИмя: {DocumentTitle}\nАвтор: {DocumentAuthor}\nКлючевые слова: {DocumentKeyWord}\n" +
-        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nКоличество строк: {documentExcelRowCount}\n" +
-        $"Количество столбцов: {documentExcelColumnCount}\n");
+        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nКоличество строк: {DocumentExcelRowCount}\n" +
+        $"Количество столбцов: {DocumentExcelColumnCount}\n");
     }
   }
 }

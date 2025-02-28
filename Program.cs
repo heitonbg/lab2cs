@@ -2,12 +2,12 @@
 
 namespace lab2cs {
   class Singletone {
-    private static Singletone instance;
+    private static Singletone s_instance;
 
     public static Singletone Instance { 
       get { 
-        instance = new Singletone(); 
-        return instance; 
+        s_instance = new Singletone(); 
+        return s_instance; 
       } 
     }
 
