@@ -70,7 +70,6 @@ namespace lab2cs {
   class Program {
     static void Main(string[] args) {
       Singletone.Instance.DataInput();
-
       Console.ReadKey();
     }
   }
