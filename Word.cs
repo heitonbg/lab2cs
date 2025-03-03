@@ -2,10 +2,10 @@
 
 namespace lab2cs {
   class Word : Document {
-    string DocumentWordPageCount, DocumentWordUsedFonts;
+    string DocumentWordPageCount;
+    string DocumentWordUsedFonts;
 
-    public Word(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath,
-      string documentTopic) {
+    public Word(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath, string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
       this.DocumentKeyWord = documentKeyWord;
@@ -20,9 +20,9 @@ namespace lab2cs {
     }
     
     public override void DocumentInfo() {
-      Console.WriteLine($"\nИмя: {DocumentTitle}\nАвтор: {DocumentAuthor}\nКлючевые слова: {DocumentKeyWord}\n" +
-        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nКоличество страниц: {DocumentWordPageCount}\n" +
-        $"Используемые шрифты: {DocumentWordUsedFonts}");
+      base.DocumentInfo();
+      Console.WriteLine($"Количество страниц: {DocumentWordPageCount}\n" +
+      $"Используемые шрифты: {DocumentWordUsedFonts}");
     }
   }
 }

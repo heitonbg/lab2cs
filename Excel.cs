@@ -2,10 +2,10 @@
 
 namespace lab2cs {
   class Excel : Document {
-    string DocumentExcelRowCount, DocumentExcelColumnCount;
+    string DocumentExcelRowCount; 
+    string DocumentExcelColumnCount;
 
-    public Excel(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath,
-      string documentTopic) {
+    public Excel(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath, string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
       this.DocumentKeyWord = documentKeyWord;
@@ -20,9 +20,9 @@ namespace lab2cs {
     }
 
     public override void DocumentInfo() {
-      Console.WriteLine($"\nИмя: {DocumentTitle}\nАвтор: {DocumentAuthor}\nКлючевые слова: {DocumentKeyWord}\n" +
-        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nКоличество строк: {DocumentExcelRowCount}\n" +
-        $"Количество столбцов: {DocumentExcelColumnCount}\n");
+      base.DocumentInfo();
+      Console.WriteLine($"Количество строк: {DocumentExcelRowCount}\n" +
+      $"Количество столбцов: {DocumentExcelColumnCount}\n");
     }
   }
 }

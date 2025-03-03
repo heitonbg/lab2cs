@@ -19,8 +19,11 @@ namespace lab2cs {
       Pdf,
     }
 
-    string DocumentTitle, DocumentAuthor,
-      DocumentKeyWord, DocumentPath, DocumentTopic;
+    string DocumentTitle; 
+    string DocumentAuthor;
+    string DocumentKeyWord;
+    string DocumentPath; 
+    string DocumentTopic;
 
     public void DataInput() {
       Console.WriteLine("Выберите формат файла:\n1. TXT\n2. Word\n3. Excel\n4. HTML\n5. PDF");
@@ -68,7 +71,7 @@ namespace lab2cs {
   }
 
   class Program {
-    static void Main(string[] args) {
+    static void Main() {
       Singletone.Instance.DataInput();
       Console.ReadKey();
     }
