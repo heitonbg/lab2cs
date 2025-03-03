@@ -5,11 +5,7 @@ namespace lab2cs {
     string DocumentExcelRowCount; 
     string DocumentExcelColumnCount;
 
-    public Excel(string documentTitle,
-      string documentAuthor, 
-      string documentKeyWord, 
-      string documentPath,
-      string documentTopic) {
+    public Excel(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath, string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
       this.DocumentKeyWord = documentKeyWord;

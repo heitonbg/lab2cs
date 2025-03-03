@@ -5,11 +5,7 @@ namespace lab2cs {
     string DocumentTxtStringCount; 
     string DocumentTxtSignCount;
 
-    public Txt(string documentTitle, 
-      string documentAuthor,
-      string documentKeyWord,
-      string documentPath,
-      string documentTopic) {
+    public Txt(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath, string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
       this.DocumentKeyWord = documentKeyWord;

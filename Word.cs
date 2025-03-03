@@ -5,11 +5,7 @@ namespace lab2cs {
     string DocumentWordPageCount;
     string DocumentWordUsedFonts;
 
-    public Word(string documentTitle,
-      string documentAuthor,
-      string documentKeyWord,
-      string documentPath,
-      string documentTopic) {
+    public Word(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath, string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
       this.DocumentKeyWord = documentKeyWord;

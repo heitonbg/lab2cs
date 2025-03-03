@@ -5,11 +5,7 @@ namespace lab2cs {
     string DocumentHtmlClassesUsed; 
     string DocumentHtmlStringCount;
 
-    public Html(string documentTitle, 
-      string documentAuthor, 
-      string documentKeyWord, 
-      string documentPath,
-      string documentTopic) {
+    public Html(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath, string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
       this.DocumentKeyWord = documentKeyWord;
