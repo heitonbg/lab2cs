@@ -2,9 +2,13 @@
 
 namespace lab2cs {
   class Txt : Document {
-    string DocumentTxtStringCount, DocumentTxtSignCount;
+    string DocumentTxtStringCount; 
+    string DocumentTxtSignCount;
 
-    public Txt(string documentTitle, string documentAuthor, string documentKeyWord, string documentPath,
+    public Txt(string documentTitle, 
+      string documentAuthor,
+      string documentKeyWord,
+      string documentPath,
       string documentTopic) {
       this.DocumentTitle = documentTitle;
       this.DocumentAuthor = documentAuthor;
@@ -20,9 +24,9 @@ namespace lab2cs {
     }
 
     public override void DocumentInfo() {
-      Console.WriteLine($"\nИмя: {DocumentTitle}\nАвтор: {DocumentAuthor}\nКлючевые слова: {DocumentKeyWord}\n" +
-        $"Путь к файлу: {DocumentPath}\nТема документа: {DocumentTopic}\nКоличество строк: {DocumentTxtStringCount}\n" +
-        $"Количество символов: {DocumentTxtSignCount}\n");
+      base.DocumentInfo();
+      Console.WriteLine($"\nКоличество строк: {DocumentTxtStringCount}\n" +
+      $"Количество символов: {DocumentTxtSignCount}\n");
     }
   }
 }

@@ -1,11 +1,11 @@
 ﻿﻿using System;
 
 namespace lab2cs {
-  class Excel : Document {
-    string DocumentExcelRowCount; 
-    string DocumentExcelColumnCount;
+  class Pdf : Document {
+    string DocumentPdfDateEdit; 
+    string DocumentPdfPageCount;
 
-    public Excel(string documentTitle,
+    public Pdf(string documentTitle, 
       string documentAuthor, 
       string documentKeyWord, 
       string documentPath,
@@ -16,17 +16,17 @@ namespace lab2cs {
       this.DocumentPath = documentPath;
       this.DocumentTopic = documentTopic;
 
-      Console.WriteLine("Введите количество столбцов: ");
-      DocumentExcelColumnCount = Console.ReadLine();
-
       Console.WriteLine("Введите количество строк: ");
-      DocumentExcelRowCount = Console.ReadLine();
+      DocumentPdfPageCount = Console.ReadLine();
+
+      Console.WriteLine("Введите дату редактирования: ");
+      DocumentPdfDateEdit = Console.ReadLine();
     }
 
     public override void DocumentInfo() {
       base.DocumentInfo();
-      Console.WriteLine($"\nКоличество строк: {DocumentExcelRowCount}\n" +
-      $"Количество столбцов: {DocumentExcelColumnCount}\n");
+      Console.WriteLine($"\nДата редактирования: {DocumentPdfDateEdit}\n" +
+      $"Количество страниц: {DocumentPdfPageCount}\n");
     }
   }
 }
