@@ -49,7 +49,7 @@
     <Compile Include="notexcel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Txt.cs" />
+    <Compile Include="nottxt.cs" />
     <Compile Include="notword.cs" />
   </ItemGroup>
   <ItemGroup>
