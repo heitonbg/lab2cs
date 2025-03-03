@@ -25,7 +25,7 @@ namespace lab2cs {
     
     public override void DocumentInfo() {
       base.DocumentInfo();
-      Console.WriteLine($"\nКоличество страниц: {DocumentWordPageCount}\n" +
+      Console.WriteLine($"Количество страниц: {DocumentWordPageCount}\n" +
       $"Используемые шрифты: {DocumentWordUsedFonts}");
     }
   }

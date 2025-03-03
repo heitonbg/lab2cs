@@ -13,7 +13,7 @@ namespace lab2cs {
       $"Author: {DocumentAuthor}\n" +
       $"Key word: {DocumentKeyWord}\n" +
       $"Path: {DocumentPath}\n" +
-      $"Topic: {DocumentTopic}\n");
+      $"Topic: {DocumentTopic}");
     }
   }
 }
