@@ -25,7 +25,7 @@ namespace lab2cs {
 
     public override void DocumentInfo() {
       base.DocumentInfo();
-      Console.WriteLine($"\nИспользуемые классы: {DocumentHtmlClassesUsed}\n" +
+      Console.WriteLine($"Используемые классы: {DocumentHtmlClassesUsed}\n" +
       $"Количество строк: {DocumentHtmlStringCount}\n");
     }
   }

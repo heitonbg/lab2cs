@@ -25,7 +25,7 @@ namespace lab2cs {
 
     public override void DocumentInfo() {
       base.DocumentInfo();
-      Console.WriteLine($"\nДата редактирования: {DocumentPdfDateEdit}\n" +
+      Console.WriteLine($"Дата редактирования: {DocumentPdfDateEdit}\n" +
       $"Количество страниц: {DocumentPdfPageCount}\n");
     }
   }

@@ -25,7 +25,7 @@ namespace lab2cs {
 
     public override void DocumentInfo() {
       base.DocumentInfo();
-      Console.WriteLine($"\nКоличество строк: {DocumentExcelRowCount}\n" +
+      Console.WriteLine($"Количество строк: {DocumentExcelRowCount}\n" +
       $"Количество столбцов: {DocumentExcelColumnCount}\n");
     }
   }

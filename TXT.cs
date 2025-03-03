@@ -25,7 +25,7 @@ namespace lab2cs {
 
     public override void DocumentInfo() {
       base.DocumentInfo();
-      Console.WriteLine($"\nКоличество строк: {DocumentTxtStringCount}\n" +
+      Console.WriteLine($"Количество строк: {DocumentTxtStringCount}\n" +
       $"Количество символов: {DocumentTxtSignCount}\n");
     }
   }
